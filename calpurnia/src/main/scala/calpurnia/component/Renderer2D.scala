@@ -2,12 +2,11 @@ package calpurnia.component
 
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.Gdx
-import util.logging.ConsoleLogger
 import calpurnia.{Entity, GraphicServices}
 
 class Renderer2D(val parent : Entity,
                  val resourceName : String)
-  extends DrawableComponent with ConsoleLogger
+  extends DrawableComponent
 {
   //Primary constructor, call onCreate right after
   Id = resourceName.split("/").reverse(0) //Get as id the image name
@@ -26,12 +25,6 @@ class Renderer2D(val parent : Entity,
   def onAttach {}
 
   def update {}
-
-  override def move(newX : Int, newY : Int)
-  {
-    log("Rendered2d: Updating my position!")
-    super.move(newX, newY)
-  }
 
   def draw
   {

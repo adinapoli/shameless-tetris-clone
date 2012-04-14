@@ -13,7 +13,7 @@ import com.badlogic.gdx.Gdx
  * A simple PhysicService. Need to decide if is worth using it or not.
  */
 
-object PhysicServices {
+object PhysicManager {
   val world_ : Option[World] = Some(new World(new Vector2(0, -20), true))
   def world : Option[World] = { world_ }
 

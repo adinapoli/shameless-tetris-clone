@@ -3,7 +3,7 @@ package calpurnia.component
 
 import com.badlogic.gdx.physics.box2d._
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType
-import calpurnia.{Entity, PhysicServices}
+import calpurnia.{Entity, PhysicManager}
 import calpurnia.messaging.UpdatePositionMsg
 import util.logging.ConsoleLogger
 import calpurnia.entity.MovableEntity
@@ -29,7 +29,7 @@ class RigidBoxComponent(parent : MovableEntity, width : Float,
     val definition : BodyDef = new BodyDef()
     definition.`type` = BodyType.StaticBody
 
-    PhysicServices.world match{
+    PhysicManager.world match{
       case Some(w) =>
       {
         body = Some(w.createBody(definition))
@@ -65,8 +65,6 @@ class RigidBoxComponent(parent : MovableEntity, width : Float,
 
   override def move(newX : Int, newY : Int)
   {
-    super.move(newX,newY)
-
     //Set also the position of the rigid body
     body match
     {
@@ -74,5 +72,6 @@ class RigidBoxComponent(parent : MovableEntity, width : Float,
       case None => ()
     }
 
+    super.move(newX,newY)
   }
 }

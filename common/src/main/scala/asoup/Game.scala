@@ -4,7 +4,7 @@ import com.badlogic.gdx._
 import graphics.{GL10}
 import calpurnia.entity.{DrawableEntity, FPSCounter}
 import calpurnia.component.{RigidBoxComponent, TextRenderer, Renderer2D}
-import calpurnia.{PhysicServices, Manager}
+import calpurnia.{PhysicManager, Manager}
 
 class Game extends ApplicationListener {
 
@@ -43,7 +43,7 @@ class Game extends ApplicationListener {
 
     graphicsManager.update
     debugHUD.update
-    PhysicServices.update
+    PhysicManager.update
   }
 
   def resize(width: Int, height: Int): Unit = {}
