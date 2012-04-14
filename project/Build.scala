@@ -3,7 +3,9 @@ import Keys._
 import sbtassembly.Plugin._
 
 object ASoupBuild extends Build {
-  lazy val calpurnia = Project("calpurnia", file("calpurnia"))
+  lazy val calpurnia = Project("calpurnia", file("calpurnia"),
+    settings = Defaults.defaultSettings ++
+      Seq(libraryDependencies += "org.scalaz" %% "scalaz-core" % "6.0.4"))
   lazy val common = Project("common", file("common")) dependsOn(calpurnia)
   lazy val resources = Project("resources", file("resources"))
 

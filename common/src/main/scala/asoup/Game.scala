@@ -1,43 +1,49 @@
 package asoup
 
 import com.badlogic.gdx._
-import graphics.g2d.{TextureRegion, Sprite, BitmapFont, SpriteBatch}
-import graphics.{Texture, GL10}
-import calpurnia.Entity
-import calpurnia.component.Renderer2D
+import graphics.{GL10}
+import calpurnia.entity.{DrawableEntity, FPSCounter}
+import calpurnia.component.{RigidBoxComponent, TextRenderer, Renderer2D}
+import calpurnia.{PhysicServices, Manager}
 
 class Game extends ApplicationListener {
 
-  val textToDisplay : String = "Hello from Libgdx"
-  var textBatch : Option[SpriteBatch] = None
-  var font: Option[BitmapFont] = None
-  var ent : Entity = new Object with Entity
-  ent.id = "SoupEntity"
+  var debugHUD : Manager = new Object with Manager
+  var graphicsManager : Manager = new Object with Manager
 
   def create(): Unit = {
-    textBatch = Some(new SpriteBatch())
-    font = Some(new BitmapFont())
-    ent.attach(new Renderer2D("backgrounds/bluebg.jpg", 0, 0))
-    ent.attach(new Renderer2D("sprites/soup.png", 200, 200))
-    ent.attach(new Renderer2D("sprites/cake.png", 250, 250))
+
+    graphicsManager.Id = "GraphicsManager"
+    graphicsManager.attach(new DrawableEntity {
+      Id = "bgEntity"
+      attach(new Renderer2D(this, "backgrounds/bluebg.jpg"))
+    })
+    graphicsManager.attach(new DrawableEntity {
+      Id = "crateEntity"
+      attach(new RigidBoxComponent(this, 200, 200, 0))
+      attach(new Renderer2D(this, "sprites/crate.png"))
+      move(200, 200)
+    })
+
+    //Debug HUD creation
+    debugHUD.Id = "DebugHUD"
+    debugHUD.attach(new DrawableEntity {
+      attach(new TextRenderer(this, "Shameless Tetris Clone"))
+      move(150,470)
+    })
+    debugHUD.attach(new FPSCounter{
+      move(10, 470)
+    })
   }
 
-  def render(): Unit = {
+  def render(){
 
     Gdx.gl.glClearColor(1.0f, 0.0f, 0.0f, 0.0f)
     Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT)
 
-//    textBatch match {
-//      case Some(batch) =>
-//        batch.begin()
-//        //Assuming that BitmapFont exists
-//        font.get.draw(batch, textToDisplay, 100.0f, 100.0f)
-//        batch.end()
-//      case None => ()
-//    }
-
-    ent.update
-
+    graphicsManager.update
+    debugHUD.update
+    PhysicServices.update
   }
 
   def resize(width: Int, height: Int): Unit = {}

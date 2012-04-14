@@ -1,24 +1,18 @@
 package calpurnia.component
 
-import calpurnia.ComponentTypes._
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.Gdx
-import calpurnia.GraphicServices
+import util.logging.ConsoleLogger
+import calpurnia.{Entity, GraphicServices}
 
-class Renderer2D(val resourceName : String) extends DrawableComponent
+class Renderer2D(val parent : Entity,
+                 val resourceName : String)
+  extends DrawableComponent with ConsoleLogger
 {
   //Primary constructor, call onCreate right after
   Id = resourceName.split("/").reverse(0) //Get as id the image name
   var texture : Option[Texture] = None
   onCreate
-
-  def this(name : String, x : Int, y : Int)
-  {
-    this(name)
-    this.x = x
-    this.y = y
-    onCreate //call onCreate
-  }
 
   def onCreate {
     texture = Some(new Texture((Gdx.files.internal(resourceName))))
@@ -33,6 +27,11 @@ class Renderer2D(val resourceName : String) extends DrawableComponent
 
   def update {}
 
+  override def move(newX : Int, newY : Int)
+  {
+    log("Rendered2d: Updating my position!")
+    super.move(newX, newY)
+  }
 
   def draw
   {
@@ -41,7 +40,7 @@ class Renderer2D(val resourceName : String) extends DrawableComponent
 
         texture match
         {
-          case Some(t) => b.draw(texture.get, x, y)
+          case Some(t) => b.draw(texture.get, X, Y)
           case None => ()
         }
 
@@ -49,5 +48,5 @@ class Renderer2D(val resourceName : String) extends DrawableComponent
     }
   }
 
-  def onDetatch {}
+  def onDetach {}
 }

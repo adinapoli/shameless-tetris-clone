@@ -41,6 +41,35 @@
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile
 [debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->master]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->default(compile)]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile
+[debug] 	using sbt-chain to resolve org.scalaz#scalaz-core_2.9.1;6.0.4
+[debug] sbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.9.1;6.0.4 {compile=[default(compile)]}
+[debug] No entry is found in the ModuleDescriptorCache : /Users/alfredodinapoli/.ivy2/cache/org.scalaz/scalaz-core_2.9.1/ivy-6.0.4.xml
+[debug] post 1.3 ivy file: using exact as default matcher
+[debug] 	found ivy file in cache for org.scalaz#scalaz-core_2.9.1;6.0.4 (resolved by public): /Users/alfredodinapoli/.ivy2/cache/org.scalaz/scalaz-core_2.9.1/ivy-6.0.4.xml
+[debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.9.1;6.0.4
+[debug] Entry is found in the ModuleDescriptorCache : /Users/alfredodinapoli/.ivy2/cache/org.scalaz/scalaz-core_2.9.1/ivy-6.0.4.xml
+[debug] 	found ivy file in cache for org.scalaz#scalaz-core_2.9.1;6.0.4 (resolved by public): /Users/alfredodinapoli/.ivy2/cache/org.scalaz/scalaz-core_2.9.1/ivy-6.0.4.xml
+[debug] 	local: revision in cache: org.scalaz#scalaz-core_2.9.1;6.0.4
+[debug] 	checking org.scalaz#scalaz-core_2.9.1;6.0.4 from public against [none]
+[debug] 	module revision kept as first found: org.scalaz#scalaz-core_2.9.1;6.0.4 from public
+[debug] 	found org.scalaz#scalaz-core_2.9.1;6.0.4 in public
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->runtime]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->compile]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->master(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->compile(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->compile]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile
+[debug] compile is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->master]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile
 [debug] == resolving dependencies common#common_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->default(compile)]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile
 [debug] compile is loaded and no conf to load.  Skip loading
@@ -106,6 +135,29 @@
 [debug] runtime is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->master]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime
+[debug] runtime is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->default(compile)]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->runtime]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime
+[debug] runtime is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->compile]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime
+[debug] runtime is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->master(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime
+[debug] runtime is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->compile(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime
+[debug] runtime is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime
+[debug] runtime is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->compile]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime
+[debug] runtime is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->master]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime
 [debug] runtime is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies common#common_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->default(compile)]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime
@@ -192,6 +244,29 @@
 [debug] test is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->master]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test
+[debug] test is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->default(compile)]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->runtime]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test
+[debug] test is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->compile]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test
+[debug] test is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->master(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test
+[debug] test is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->compile(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test
+[debug] test is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test
+[debug] test is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->compile]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test
+[debug] test is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->master]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test
 [debug] test is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies common#common_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->default(compile)]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test
@@ -303,6 +378,29 @@
 [debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->master]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal
 [debug] compile-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->default(compile)]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile-internal
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->runtime]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile-internal
+[debug] compile-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->compile]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile-internal
+[debug] compile-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->master(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal
+[debug] compile-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->compile(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal
+[debug] compile-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal
+[debug] compile-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->compile]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal
+[debug] compile-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->master]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=compile-internal
+[debug] compile-internal is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies common#common_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->default(compile)]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=compile-internal
 [debug] compile-internal is loaded and no conf to load.  Skip loading
@@ -394,6 +492,29 @@
 [debug] runtime-internal is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->master]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime-internal
+[debug] runtime-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->default(compile)]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime-internal
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->runtime]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime-internal
+[debug] runtime-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->compile]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime-internal
+[debug] runtime-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->master(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime-internal
+[debug] runtime-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->compile(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime-internal
+[debug] runtime-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime-internal
+[debug] runtime-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->compile]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime-internal
+[debug] runtime-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->master]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=runtime-internal
 [debug] runtime-internal is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies common#common_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->default(compile)]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=runtime-internal
@@ -507,6 +628,29 @@
 [debug] test-internal is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->master]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal
+[debug] test-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->default(compile)]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test-internal
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->runtime]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test-internal
+[debug] test-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->compile]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test-internal
+[debug] test-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->master(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal
+[debug] test-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [compile->compile(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal
+[debug] test-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal
+[debug] test-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies org.scalaz#scalaz-core_2.9.1;6.0.4->org.scala-lang#scala-library;2.9.1 [runtime->compile]
+[debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal
+[debug] test-internal is loaded and no conf to load.  Skip loading
+[debug] == resolving dependencies calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT->org.scalaz#scalaz-core_2.9.1;6.0.4 [compile->master]
+[debug] loadData of org.scalaz#scalaz-core_2.9.1;6.0.4 of rootConf=test-internal
 [debug] test-internal is loaded and no conf to load.  Skip loading
 [debug] == resolving dependencies common#common_2.9.1;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.1 [compile->default(compile)]
 [debug] loadData of org.scala-lang#scala-library;2.9.1 of rootConf=test-internal
@@ -630,11 +774,14 @@
 [debug] resolving dependencies for configuration 'pom'
 [debug] == resolving dependencies for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT [pom]
 [debug] loadData of desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT of rootConf=pom
-[debug] Nbr of module to sort : 4
+[debug] Nbr of module to sort : 5
 [debug] Sort dependencies of : common#common_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
-[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
+[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
+[debug] Sort dependencies of : org.scalaz#scalaz-core_2.9.1;6.0.4 / Number of dependencies = 1
+[debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Sort done for : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort done for : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : common#common_2.9.1;0.1-SNAPSHOT
@@ -643,6 +790,7 @@
 [debug] Sort dependencies of : resources#resources_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : resources#resources_2.9.1;0.1-SNAPSHOT
+[debug] Module descriptor is processed : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] 	resolved ivy file produced in /Users/alfredodinapoli/.ivy2/cache/resolved-desktop-desktop$sources_javadoc_2.9.1-0.1-SNAPSHOT.xml
 [debug] :: downloading artifacts ::
 [debug] no report found for common#common_2.9.1;0.1-SNAPSHOT!common_2.9.1.jar(doc)
@@ -657,29 +805,29 @@
 [debug] no report found for common#common_2.9.1;0.1-SNAPSHOT!common_2.9.1.jar(src)
 [debug] no report found for common#common_2.9.1;0.1-SNAPSHOT!common_2.9.1.jar(doc)
 [debug] no report found for common#common_2.9.1;0.1-SNAPSHOT!common_2.9.1.jar(src)
-[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(src)
+[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(doc)
-[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(src)
+[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(doc)
-[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(src)
+[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(doc)
-[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(src)
+[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(doc)
-[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(src)
+[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(doc)
-[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(src)
+[debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.pom
 [debug] no report found for calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT!calpurnia_2.9.1.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.9.1!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.9.1!scala-library.jar(doc)
@@ -695,45 +843,58 @@
 [debug] no report found for resources#resources_2.9.1;0.1-SNAPSHOT!resources_2.9.1.jar(src)
 [debug] no report found for resources#resources_2.9.1;0.1-SNAPSHOT!resources_2.9.1.jar(doc)
 [debug] no report found for resources#resources_2.9.1;0.1-SNAPSHOT!resources_2.9.1.jar(src)
-[debug] :: resolution report :: resolve 264ms :: artifacts dl 17ms
-[debug] Nbr of module to sort : 4
+[debug] 	[NOT REQUIRED] org.scalaz#scalaz-core_2.9.1;6.0.4!scalaz-core_2.9.1.jar
+[debug] :: resolution report :: resolve 410ms :: artifacts dl 34ms
+[debug] Nbr of module to sort : 5
 [debug] Sort dependencies of : common#common_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
-[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
+[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
+[debug] Sort dependencies of : org.scalaz#scalaz-core_2.9.1;6.0.4 / Number of dependencies = 1
+[debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Sort done for : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort done for : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : common#common_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Module descriptor is processed : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort dependencies of : resources#resources_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : resources#resources_2.9.1;0.1-SNAPSHOT
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT compile produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-compile.xml
-[debug] Nbr of module to sort : 4
+[debug] Nbr of module to sort : 5
 [debug] Sort dependencies of : common#common_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
-[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
+[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
+[debug] Sort dependencies of : org.scalaz#scalaz-core_2.9.1;6.0.4 / Number of dependencies = 1
+[debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Sort done for : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort done for : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : common#common_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Module descriptor is processed : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort dependencies of : resources#resources_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : resources#resources_2.9.1;0.1-SNAPSHOT
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT runtime produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-runtime.xml
-[debug] Nbr of module to sort : 4
+[debug] Nbr of module to sort : 5
 [debug] Sort dependencies of : common#common_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
-[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
+[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
+[debug] Sort dependencies of : org.scalaz#scalaz-core_2.9.1;6.0.4 / Number of dependencies = 1
+[debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Sort done for : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort done for : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : common#common_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Module descriptor is processed : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort dependencies of : resources#resources_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : resources#resources_2.9.1;0.1-SNAPSHOT
@@ -742,44 +903,56 @@
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT provided produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-provided.xml
 [debug] Nbr of module to sort : 0
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT optional produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-optional.xml
-[debug] Nbr of module to sort : 4
+[debug] Nbr of module to sort : 5
 [debug] Sort dependencies of : common#common_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
-[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
+[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
+[debug] Sort dependencies of : org.scalaz#scalaz-core_2.9.1;6.0.4 / Number of dependencies = 1
+[debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Sort done for : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort done for : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : common#common_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Module descriptor is processed : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort dependencies of : resources#resources_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : resources#resources_2.9.1;0.1-SNAPSHOT
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT compile-internal produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-compile-internal.xml
-[debug] Nbr of module to sort : 4
+[debug] Nbr of module to sort : 5
 [debug] Sort dependencies of : common#common_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
-[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
+[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
+[debug] Sort dependencies of : org.scalaz#scalaz-core_2.9.1;6.0.4 / Number of dependencies = 1
+[debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Sort done for : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort done for : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : common#common_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Module descriptor is processed : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort dependencies of : resources#resources_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : resources#resources_2.9.1;0.1-SNAPSHOT
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT runtime-internal produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-runtime-internal.xml
-[debug] Nbr of module to sort : 4
+[debug] Nbr of module to sort : 5
 [debug] Sort dependencies of : common#common_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
-[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
+[debug] Sort dependencies of : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT / Number of dependencies = 2
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
+[debug] Sort dependencies of : org.scalaz#scalaz-core_2.9.1;6.0.4 / Number of dependencies = 1
+[debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Sort done for : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort done for : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : common#common_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : calpurnia#calpurnia_2.9.1;0.1-SNAPSHOT
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
+[debug] Module descriptor is processed : org.scalaz#scalaz-core_2.9.1;6.0.4
 [debug] Sort dependencies of : resources#resources_2.9.1;0.1-SNAPSHOT / Number of dependencies = 1
 [debug] Module descriptor is processed : org.scala-lang#scala-library;2.9.1
 [debug] Sort done for : resources#resources_2.9.1;0.1-SNAPSHOT
@@ -792,4 +965,4 @@
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT docs produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-docs.xml
 [debug] Nbr of module to sort : 0
 [debug] 	report for desktop#desktop$sources_javadoc_2.9.1;0.1-SNAPSHOT pom produced in /Users/alfredodinapoli/.ivy2/cache/desktop-desktop$sources_javadoc_2.9.1-pom.xml
-[debug] 	resolve done (264ms resolve - 17ms download)
+[debug] 	resolve done (410ms resolve - 34ms download)

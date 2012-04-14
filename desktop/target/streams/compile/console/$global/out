@@ -1,0 +1,11 @@
+[debug] Starting sandboxed run...
+[debug] Waiting for threads to exit or System.exit to be called.
+[debug] Waiting for thread run-main to exit
+[info] Starting scala interpreter...
+[debug]   Boot classpath: /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/alfredodinapoli/.sbt/boot/scala-2.9.1/lib/scala-library.jar
+[debug]   Classpath: /Users/alfredodinapoli/Programmazione/Games/asoup/desktop/target/scala-2.9.1/classes:/Users/alfredodinapoli/Programmazione/Games/asoup/common/target/scala-2.9.1/classes:/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes:/Users/alfredodinapoli/Programmazione/Games/asoup/resources/target/scala-2.9.1/classes:/Users/alfredodinapoli/Programmazione/Games/asoup/desktop/lib/gdx-backend-jogl-natives.jar:/Users/alfredodinapoli/Programmazione/Games/asoup/desktop/lib/gdx-backend-jogl.jar:/Users/alfredodinapoli/Programmazione/Games/asoup/desktop/lib/gdx-natives.jar:/Users/alfredodinapoli/Programmazione/Games/asoup/common/lib/gdx.jar:/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/lib/gdx.jar:/Users/alfredodinapoli/.sbt/boot/scala-2.9.1/lib/scala-compiler.jar:/Users/alfredodinapoli/.sbt/boot/scala-2.9.1/lib/jansi.jar:/Users/alfredodinapoli/.sbt/boot/scala-2.9.1/lib/jline.jar
+[info] 
+[debug] 	Thread run-main exited.
+[debug] Interrupting remaining threads (should be all daemons).
+[debug] Sandboxed run complete..
+[debug] Exited with code 0

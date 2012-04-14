@@ -28,7 +28,7 @@ trait Component {
    * Specify a set of operations that can be performed
    * when a component is detached from an Entity
    */
-  def onDetatch : Unit
+  def onDetach : Unit
 
 }
 
