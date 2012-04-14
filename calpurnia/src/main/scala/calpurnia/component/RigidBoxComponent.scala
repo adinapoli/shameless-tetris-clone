@@ -3,9 +3,8 @@ package calpurnia.component
 
 import com.badlogic.gdx.physics.box2d._
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType
-import calpurnia.{Entity, PhysicManager}
+import calpurnia.{PhysicManager}
 import calpurnia.messaging.UpdatePositionMsg
-import util.logging.ConsoleLogger
 import calpurnia.entity.MovableEntity
 
 /**
@@ -19,7 +18,7 @@ import calpurnia.entity.MovableEntity
 
 class RigidBoxComponent(parent : MovableEntity, width : Float,
                         height : Float, density : Float)
-  extends PhysicComponent with ConsoleLogger{
+  extends PhysicComponent{
 
   Id = "RigidBoxComponent"
   onCreate
@@ -27,7 +26,7 @@ class RigidBoxComponent(parent : MovableEntity, width : Float,
   def onCreate{
     //Create a box
     val definition : BodyDef = new BodyDef()
-    definition.`type` = BodyType.StaticBody
+    definition.`type` = BodyType.DynamicBody
 
     PhysicManager.world match{
       case Some(w) =>
@@ -59,7 +58,6 @@ class RigidBoxComponent(parent : MovableEntity, width : Float,
     val newY = body.get.getTransform.getPosition.y.asInstanceOf[Int]
     val argMap = Map("newX" -> newX, "newY" -> newY)
     parent.handleMessage(UpdatePositionMsg(this, argMap))
-    log("RigidBox position changed: X = " + newX + ", Y = " + newY)
   }
 
 

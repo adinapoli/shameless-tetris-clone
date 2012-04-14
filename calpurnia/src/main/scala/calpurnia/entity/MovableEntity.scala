@@ -26,8 +26,8 @@ trait MovableEntity extends Entity{
         //Update every DrawableComponent
         val newX : Int = argMap("newX").asInstanceOf[Int]
         val newY : Int = argMap("newY").asInstanceOf[Int]
-        val filtered = components.values.filter(_.isInstanceOf[DrawableEntity])
-        filtered.foreach(_.asInstanceOf[DrawableEntity].move(newX, newY))
+        val filtered = components.values.filter(_.isInstanceOf[MovableComponent])
+        filtered.foreach(_.asInstanceOf[MovableComponent].move(newX, newY))
       }
 
       case _ => ()
