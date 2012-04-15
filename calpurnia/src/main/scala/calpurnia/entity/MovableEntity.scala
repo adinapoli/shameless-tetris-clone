@@ -1,8 +1,8 @@
 package calpurnia.entity
 
 import calpurnia.component.MovableComponent
-import calpurnia.{Msg, Entity}
 import calpurnia.messaging.UpdatePositionMsg
+import calpurnia.{Component, Msg, Entity}
 
 trait MovableEntity extends Entity{
   Id = "MovableEntity"
@@ -23,7 +23,7 @@ trait MovableEntity extends Entity{
     {
       case UpdatePositionMsg(p, argMap) =>
       {
-        //Update every DrawableComponent
+        //Update every MovableComponent
         val newX : Int = argMap("newX").asInstanceOf[Int]
         val newY : Int = argMap("newY").asInstanceOf[Int]
         val filtered = components.values.filter(_.isInstanceOf[MovableComponent])

@@ -13,7 +13,7 @@ class CrateMouseController(e : Entity, width : Int, height : Int)
 
   def update{
 
-    when(Gdx.input.isButtonPressed(Buttons.LEFT))
+    if(Gdx.input.isButtonPressed(Buttons.LEFT))
     {
       //try an hazardous cast into a MovableEntity
       e.asInstanceOf[MovableEntity].move(Gdx.input.getX, height - Gdx.input.getY)

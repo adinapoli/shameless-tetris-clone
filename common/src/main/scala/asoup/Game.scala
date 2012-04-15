@@ -1,10 +1,15 @@
 package asoup
 
 import com.badlogic.gdx._
+import controllers.ShowPositionMouseController
 import graphics.{GL10}
 import calpurnia.entity.{DrawableEntity, FPSCounter}
-import calpurnia.component.{RigidBoxComponent, TextRenderer, Renderer2D}
-import calpurnia.{PhysicManager, Manager}
+import calpurnia.component.physics.{DynamicBoxComponent, KinematicBoxComponent}
+import calpurnia.component.{TextRenderer, Renderer2D}
+import calpurnia.manager.PhysicsManager
+import calpurnia.{Entity, Manager}
+import calpurnia.component.debug.Box2dDebugRenderer
+import Const.{screenWidth, screenHeight}
 
 class Game extends ApplicationListener {
 
@@ -19,10 +24,21 @@ class Game extends ApplicationListener {
       attach(new Renderer2D(this, "backgrounds/bluebg.jpg"))
     })
     graphicsManager.attach(new DrawableEntity {
+      Id = "platformEntity"
+      attach(new KinematicBoxComponent(this, 320, 32, 0))
+      attach(new Renderer2D(this, "sprites/platform.png"))
+    })
+    graphicsManager.attach(new DrawableEntity {
       Id = "crateEntity"
-      attach(new RigidBoxComponent(this, 200, 200, 0))
+      attach(new DynamicBoxComponent(this, 32, 32, 0))
       attach(new Renderer2D(this, "sprites/crate.png"))
-      move(200, 200)
+      move(50, 100)
+    })
+    graphicsManager.attach(new DrawableEntity {
+      Id = "crate2Entity"
+      attach(new DynamicBoxComponent(this, 32, 32, 0))
+      attach(new Renderer2D(this, "sprites/crate.png"))
+      move(25, 32)
     })
 
     //Debug HUD creation
@@ -34,16 +50,24 @@ class Game extends ApplicationListener {
     debugHUD.attach(new FPSCounter{
       move(10, 470)
     })
+
+    debugHUD.attach(new Entity {
+      attach(new ShowPositionMouseController(this, screenWidth, screenHeight))
+    })
+
+    debugHUD.attach(new Entity {
+      attach(new Box2dDebugRenderer(screenWidth, screenHeight))
+    })
   }
 
   def render(){
 
-    Gdx.gl.glClearColor(1.0f, 0.0f, 0.0f, 0.0f)
+    Gdx.gl.glClearColor(0.9f, 0.9f, 0.9f, 0.0f)
     Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT)
 
     graphicsManager.update
     debugHUD.update
-    PhysicManager.update
+    PhysicsManager.update
   }
 
   def resize(width: Int, height: Int): Unit = {}
