@@ -274,7 +274,7 @@
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.9.1!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.9.1!scala-library.jar(doc)
-[debug] :: resolution report :: resolve 90ms :: artifacts dl 13ms
+[debug] :: resolution report :: resolve 49ms :: artifacts dl 3ms
 [debug] Nbr of module to sort : 1
 [debug] Sort dependencies of : org.scala-lang#scala-library;2.9.1 / Number of dependencies = 0
 [debug] Sort done for : org.scala-lang#scala-library;2.9.1
@@ -311,4 +311,4 @@
 [debug] 	report for resources#resources$sources_javadoc_2.9.1;0.1-SNAPSHOT docs produced in /Users/alfredodinapoli/.ivy2/cache/resources-resources$sources_javadoc_2.9.1-docs.xml
 [debug] Nbr of module to sort : 0
 [debug] 	report for resources#resources$sources_javadoc_2.9.1;0.1-SNAPSHOT pom produced in /Users/alfredodinapoli/.ivy2/cache/resources-resources$sources_javadoc_2.9.1-pom.xml
-[debug] 	resolve done (90ms resolve - 13ms download)
+[debug] 	resolve done (49ms resolve - 3ms download)

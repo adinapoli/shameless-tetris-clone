@@ -1,0 +1,5 @@
+[info] Renderer2DSpec:
+[info] A Renderer2D 
+[info] - should have a well defined starting Id
+[info] - should upgrade its own state when moved by (X,Y)
+[info] - should upgrade its own state when moved by (X,Y,Z,Rx,Ry,Rz)

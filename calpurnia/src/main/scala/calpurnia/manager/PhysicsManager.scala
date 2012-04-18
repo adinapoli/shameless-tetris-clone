@@ -14,27 +14,23 @@ import com.badlogic.gdx.Gdx
  */
 
 object PhysicsManager {
-  val world_ : Option[World] = Some(new World(new Vector2(0, -20), true))
 
-  //In box2D world, 1 meter = 30 pixel
-  private val PIXEL_TO_METER : Float = 30.0f
+  var gravity : (Float, Float) = (0,-20)
+  val world : Option[World] = Some(new World(new Vector2(gravity._1, gravity._2), true))
 
-  def ScreenToWorld(n : Int) : Float =
+
+  def gravity_(newValue : (Float, Float))
   {
-    n / PIXEL_TO_METER
-  }
-
-  def WorldToScreen(n : Float) : Int =
-  {
-    (n * PIXEL_TO_METER).asInstanceOf[Int]
-  }
-
-  def world: Option[World] = {
-    world_
+    gravity = newValue
+    world match
+    {
+      case Some(w) => w.setGravity(new Vector2(gravity._1, gravity._2))
+      case None => ()
+    }
   }
 
   def update: Unit = {
-    world_ match {
+    world match {
       case Some(w) => w.step(Gdx.graphics.getDeltaTime, 4, 4)
       case None => ()
     }

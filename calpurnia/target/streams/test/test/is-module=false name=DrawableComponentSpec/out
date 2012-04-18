@@ -1,0 +1,8 @@
+[info] DrawableComponentSpec:
+[info] A DrawableComponent 
+[info] - should have a well-defined starting Id
+[info] - should preserves its id when casted down to MovableComponent
+[info] - should change its (X,Y,Z) correctly
+[info] - should change its (rotX, rotY, rotZ) correctly
+[info] - should preserves its (X,Y,Z) when casted down to MovableComponent
+[info] - should preserves its (rotX, rotY, rotZ) when casted down to MovableComponent

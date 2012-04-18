@@ -1,4 +1,4 @@
-package calpurnia.component.physics
+package calpurnia.component.physics.box2d
 
 import com.badlogic.gdx.physics.box2d._
 import calpurnia.component.MovableComponent

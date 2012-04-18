@@ -1,0 +1,10 @@
+[debug] Running Test MovableComponentSpec : subclass(false, org.scalatest.Suite) with arguments 
+[debug] Running Test Renderer2DSpec : subclass(false, org.scalatest.Suite) with arguments 
+[debug] Running Test DrawableComponentSpec : subclass(false, org.scalatest.Suite) with arguments 
+[debug] Running Test ComponentSpec : subclass(false, org.scalatest.Suite) with arguments 
+[info] Passed: : Total 18, Failed 0, Errors 0, Passed 18, Skipped 0
+[debug] Passed tests:
+[debug] 	ComponentSpec
+[debug] 	Renderer2DSpec
+[debug] 	DrawableComponentSpec
+[debug] 	MovableComponentSpec

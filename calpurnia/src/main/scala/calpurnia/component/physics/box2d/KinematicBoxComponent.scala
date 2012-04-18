@@ -1,4 +1,4 @@
-package calpurnia.component.physics
+package calpurnia.component.physics.box2d
 
 import calpurnia.entity.MovableEntity
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType
@@ -14,8 +14,6 @@ import com.badlogic.gdx.physics.box2d.{PolygonShape, BodyDef}
  * to physics stimulations, but can be used for static object that
  * requires collision detection and other handy features.
  */
-
-import calpurnia.manager.PhysicsManager.ScreenToWorld
 
 class KinematicBoxComponent(parent: MovableEntity, width: Float,
                             height: Float, density: Float)
@@ -33,7 +31,7 @@ class KinematicBoxComponent(parent: MovableEntity, width: Float,
       case Some(w) => {
         body = Some(w.createBody(definition))
         val poly: PolygonShape = new PolygonShape()
-        poly.setAsBox(width/2.0f, height/2.0f)
+        poly.setAsBox(width / 2.0f, height / 2.0f)
         body.get.createFixture(poly, density)
         poly.dispose()
       }
@@ -45,8 +43,11 @@ class KinematicBoxComponent(parent: MovableEntity, width: Float,
 
   def onAttach {
     //Set the position accordingly to parent position
-    body.get.setTransform(parent.X + width/2.0f,
-                          parent.Y + height/2.0f, 0)
+    body.get.setTransform(
+      parent.X + width / 2.0f,
+      parent.Y + height / 2.0f,
+      parent.rotZ
+    )
   }
 
 
@@ -62,9 +63,8 @@ class KinematicBoxComponent(parent: MovableEntity, width: Float,
     //Coordinates arrives from the outside in pixels,
     //we need to convert into world coords.
     body match {
-      case Some(b) =>
-      {
-        b.setTransform(newX + width/2.0f, newY + height/2.0f, 0)
+      case Some(b) => {
+        b.setTransform(newX + width / 2.0f, newY + height / 2.0f, 0)
       }
       case None => ()
     }

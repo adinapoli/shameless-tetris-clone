@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch
 
 trait DrawableComponent extends MovableComponent{
 
-  Id = "DrawableComponentId"
+  Id = "DrawableComponent"
   var batch : Option[SpriteBatch] = None
 
   def draw

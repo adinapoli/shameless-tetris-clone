@@ -2,14 +2,26 @@
 [debug] Initial source changes: 
 [debug] 	removed:Set()
 [debug] 	added: Set()
-[debug] 	modified: Set()
+[debug] 	modified: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala)
 [debug] Removed products: Set()
 [debug] Modified external sources: Set()
 [debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated sources: Set()
+[debug] Initial directly invalidated sources: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala)
 [debug] 
 [debug] Sources indirectly invalidated by:
 [debug] 	product: Set()
 [debug] 	binary dep: Set()
 [debug] 	external source: Set()
-[debug] Initially invalidated: Set()
+[debug] Initially invalidated: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala)
+[info] Compiling 1 Scala source to /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes...
+[debug] Interfacing (CompilerInterface) with Scala compiler version 2.9.1.final
+[debug] Calling Scala compiler with arguments  (CompilerInterface):
+[debug] 	-d
+[debug] 	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes
+[debug] 	-bootclasspath
+[debug] 	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/alfredodinapoli/.sbt/boot/scala-2.9.1/lib/scala-library.jar
+[debug] 	-classpath
+[debug] 	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes:/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/lib/gdx.jar:/Users/alfredodinapoli/.ivy2/cache/org.scalaz/scalaz-core_2.9.1/jars/scalaz-core_2.9.1-6.0.4.jar
+[debug] 	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala
+[debug] 	Invalidated direct: Set()
+[debug] Incrementally invalidated: Set()

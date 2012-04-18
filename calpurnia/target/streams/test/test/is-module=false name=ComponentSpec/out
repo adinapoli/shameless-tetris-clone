@@ -1,0 +1,4 @@
+[info] ComponentSpec:
+[info] A component 
+[info] - should have a fixed Id on creation
+[info] - should change its Id when required

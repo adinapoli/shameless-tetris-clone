@@ -4,7 +4,7 @@ import com.badlogic.gdx._
 import controllers.ShowPositionMouseController
 import graphics.{GL10}
 import calpurnia.entity.{DrawableEntity, FPSCounter}
-import calpurnia.component.physics.{DynamicBoxComponent, KinematicBoxComponent}
+import calpurnia.component.physics.box2d.{KinematicBoxComponent, DynamicBoxComponent}
 import calpurnia.component.{TextRenderer, Renderer2D}
 import calpurnia.manager.PhysicsManager
 import calpurnia.{Entity, Manager}
@@ -25,18 +25,18 @@ class Game extends ApplicationListener {
     })
     graphicsManager.attach(new DrawableEntity {
       Id = "platformEntity"
-      attach(new KinematicBoxComponent(this, 320, 32, 0))
+      attach(new KinematicBoxComponent(this, 320, 32, 10))
       attach(new Renderer2D(this, "sprites/platform.png"))
     })
     graphicsManager.attach(new DrawableEntity {
       Id = "crateEntity"
-      attach(new DynamicBoxComponent(this, 32, 32, 0))
+      attach(new DynamicBoxComponent(this, 32, 32, 10))
       attach(new Renderer2D(this, "sprites/crate.png"))
-      move(50, 100)
+      move(50, 400)
     })
     graphicsManager.attach(new DrawableEntity {
       Id = "crate2Entity"
-      attach(new DynamicBoxComponent(this, 32, 32, 0))
+      attach(new DynamicBoxComponent(this, 32, 32, 10))
       attach(new Renderer2D(this, "sprites/crate.png"))
       move(25, 32)
     })

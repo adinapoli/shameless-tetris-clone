@@ -1,0 +1,9 @@
+[info] MovableComponentSpec:
+[info] A MovableComponent 
+[info] - should have a well-defined starting Id
+[info] - should preserves its id when casted down
+[info] - should have a well-defined starting position
+[info] - should have a well-defined starting rotation angles
+[info] - should change its (X,Y) position when asked to
+[info] - should change its (X,Y,Z) position when asked to
+[info] - should change its (X,Y,Z, rotX, rotY, rotZ) when asked to
