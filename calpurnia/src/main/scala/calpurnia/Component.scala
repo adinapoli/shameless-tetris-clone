@@ -23,6 +23,12 @@ trait Component {
    */
   def update : Unit
 
+  /**
+   * Specify how a component should react whenever
+   * it receives a new message. Different components
+   * will handle only certain msg types.
+   */
+  def handleMessage(msg : Msg) : Unit
 
   /**
    * Specify a set of operations that can be performed

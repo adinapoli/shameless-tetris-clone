@@ -58,17 +58,30 @@ class KinematicBoxComponent(parent: MovableEntity, width: Float,
     //To decide
   }
 
-  override def move(newX: Int, newY: Int) {
 
-    //Coordinates arrives from the outside in pixels,
-    //we need to convert into world coords.
-    body match {
-      case Some(b) => {
-        b.setTransform(newX + width / 2.0f, newY + height / 2.0f, 0)
+  override def handleMessage(msg : Msg)
+  {
+    //Move logic
+    msg match
+    {
+      case UpdatePositionMsg(p, argList) =>
+      {
+        argList match
+        {
+          case List(newX, newY) =>
+          {
+            //Updates body position in the world
+            body match {
+              case Some(b) => b.setTransform(newX + width / 2.0f,
+                                             newY + height / 2.0f, 0)
+              case None => ()
+            }
+          }
+
+          case _ => ()
+        }
       }
-      case None => ()
+      case _ => ()
     }
-
-    super.move(newX, newY)
   }
 }

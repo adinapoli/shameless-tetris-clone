@@ -8,7 +8,7 @@ package calpurnia.component
  */
 
 import calpurnia.Component
-
+import calpurnia.Msg
 
 
 class KeyboardInputHandler extends Component{
@@ -18,6 +18,8 @@ class KeyboardInputHandler extends Component{
   def onAttach {}
 
   def onDetach {}
+
+  def handleMessage(msg : Msg) {}
 
   def update {}
 }

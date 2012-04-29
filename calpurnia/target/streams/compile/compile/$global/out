@@ -1,27 +1,107 @@
-[debug] 
-[debug] Initial source changes: 
-[debug] 	removed:Set()
-[debug] 	added: Set()
-[debug] 	modified: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala)
-[debug] Removed products: Set()
-[debug] Modified external sources: Set()
-[debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated sources: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala)
-[debug] 
-[debug] Sources indirectly invalidated by:
-[debug] 	product: Set()
-[debug] 	binary dep: Set()
-[debug] 	external source: Set()
-[debug] Initially invalidated: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala)
-[info] Compiling 1 Scala source to /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes...
-[debug] Interfacing (CompilerInterface) with Scala compiler version 2.9.1.final
-[debug] Calling Scala compiler with arguments  (CompilerInterface):
-[debug] 	-d
-[debug] 	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes
-[debug] 	-bootclasspath
-[debug] 	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/alfredodinapoli/.sbt/boot/scala-2.9.1/lib/scala-library.jar
-[debug] 	-classpath
-[debug] 	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes:/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/lib/gdx.jar:/Users/alfredodinapoli/.ivy2/cache/org.scalaz/scalaz-core_2.9.1/jars/scalaz-core_2.9.1-6.0.4.jar
-[debug] 	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala
-[debug] 	Invalidated direct: Set()
-[debug] Incrementally invalidated: Set()
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/MovableComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/MovableEntity.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/debug/Box2dDebugRenderer.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/physics/box2d/KinematicBoxComponent.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/Renderer2D.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/TextRenderer.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$move$1.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$move$3.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$handleMessage$1.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$handleMessage$2.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/MovableComponent.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/physics/box2d/PhysicComponent.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/DrawableEntity$class.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$class.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$1.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$move$2.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$handleMessage$3.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/DrawableComponent.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/FPSCounter.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/physics/box2d/PhysicComponent$class.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/DrawableEntity$$anonfun$update$1.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/DrawableEntity.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$3.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity$$anonfun$2.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/physics/box2d/DynamicBoxComponent.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/entity/MovableEntity.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/DrawableComponent$class.class, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes/calpurnia/component/MovableComponent$class.class)[0m
+[0m[[0mdebug[0m] [0mModified external sources: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/MovableComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/MovableEntity.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/TextRenderer.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/FPSCounter.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/DrawableComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/DynamicBoxComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/debug/Box2dDebugRenderer.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/PhysicComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/MovableComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/MovableEntity.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/DrawableEntity.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala)[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mInitially invalidated: Set(/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/TextRenderer.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/FPSCounter.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/DrawableComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/DynamicBoxComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/debug/Box2dDebugRenderer.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/PhysicComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/MovableComponent.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/MovableEntity.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/DrawableEntity.scala, /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 11 Scala sources to /Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes...[0m
+[0m[[0mdebug[0m] [0mInterfacing (CompilerInterface) with Scala compiler version 2.9.1.final[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/alfredodinapoli/.sbt/boot/scala-2.9.1/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/target/scala-2.9.1/classes:/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/lib/gdx.jar:/Users/alfredodinapoli/.ivy2/cache/org.scalaz/scalaz-core_2.9.1/jars/scalaz-core_2.9.1-6.0.4.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/DrawableComponent.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/MovableComponent.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/TextRenderer.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/debug/Box2dDebugRenderer.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/DynamicBoxComponent.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/PhysicComponent.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/DrawableEntity.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/FPSCounter.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/entity/MovableEntity.scala[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala:40: value move is not a member of java.lang.Object with calpurnia.component.DrawableComponent with ScalaObject[0m
+[0m[[31merror[0m] [0m        super.move(newX, newY)[0m
+[0m[[31merror[0m] [0m              ^[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/Renderer2D.scala:57: value move is not a member of java.lang.Object with calpurnia.component.DrawableComponent with ScalaObject[0m
+[0m[[31merror[0m] [0m        super.move(newX, newY, newZ, newRX, newRY, newRZ)[0m
+[0m[[31merror[0m] [0m              ^[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/DynamicBoxComponent.scala:80: value move is not a member of java.lang.Object with calpurnia.component.physics.box2d.PhysicComponent with scala.util.logging.ConsoleLogger with ScalaObject[0m
+[0m[[31merror[0m] [0m    super.move(newX, newY)[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/DynamicBoxComponent.scala:95: value move is not a member of java.lang.Object with calpurnia.component.physics.box2d.PhysicComponent with scala.util.logging.ConsoleLogger with ScalaObject[0m
+[0m[[31merror[0m] [0m    super.move(newX, newY, newZ, newRX, newRY, newRZ)[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala:62: not found: type Msg[0m
+[0m[[31merror[0m] [0m  override def handleMessage(msg : Msg)[0m
+[0m[[31merror[0m] [0m                                   ^[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala:67: not found: value UpdatePositionMsg[0m
+[0m[[31merror[0m] [0m      case UpdatePositionMsg(p, argList) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala:69: not found: value argList[0m
+[0m[[31merror[0m] [0m        argList match[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/Users/alfredodinapoli/Programmazione/Games/asoup/calpurnia/src/main/scala/calpurnia/component/physics/box2d/KinematicBoxComponent.scala:75: not found: value newX[0m
+[0m[[31merror[0m] [0m              case Some(b) => b.setTransform(newX + width / 2.0f,[0m
+[0m[[31merror[0m] [0m                                             ^[0m
+[0m[[31merror[0m] [0m8 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+Compilation failed
+	at xsbt.CompilerInterface.run(CompilerInterface.scala:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sbt.compiler.AnalyzingCompiler.call(AnalyzingCompiler.scala:57)
+	at sbt.compiler.AnalyzingCompiler.compile(AnalyzingCompiler.scala:29)
+	at sbt.compiler.AnalyzingCompiler.compile(AnalyzingCompiler.scala:25)
+	at sbt.AggressiveCompile$$anonfun$5.compileScala$1(AggressiveCompile.scala:67)
+	at sbt.AggressiveCompile$$anonfun$5.apply(AggressiveCompile.scala:79)
+	at sbt.AggressiveCompile$$anonfun$5.apply(AggressiveCompile.scala:57)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:21)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:19)
+	at sbt.inc.Incremental$.cycle(Incremental.scala:33)
+	at sbt.inc.Incremental$.compile(Incremental.scala:20)
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:17)
+	at sbt.AggressiveCompile.compile2(AggressiveCompile.scala:87)
+	at sbt.AggressiveCompile.compile1(AggressiveCompile.scala:41)
+	at sbt.AggressiveCompile.apply(AggressiveCompile.scala:28)
+	at sbt.Compiler$.apply(Compiler.scala:107)
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:479)
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:479)
+	at sbt.Scoped$$anonfun$hf2$1.apply(Structure.scala:473)
+	at sbt.Scoped$$anonfun$hf2$1.apply(Structure.scala:473)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:41)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$11.apply(Structure.scala:295)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$11.apply(Structure.scala:295)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$5.work(System.scala:67)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:227)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.CompletionService$$anon$1$$anon$2.call(CompletionService.scala:26)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[0m[[31merror[0m] [0m{file:/Users/alfredodinapoli/Programmazione/Games/asoup/}calpurnia/compile:[31mcompile[0m: Compilation failed[0m

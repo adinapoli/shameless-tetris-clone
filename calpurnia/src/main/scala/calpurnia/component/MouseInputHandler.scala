@@ -1,6 +1,6 @@
 package calpurnia.component
 
-import calpurnia.{Entity, Component}
+import calpurnia.{Entity, Component, Msg}
 
 
 /**
@@ -22,6 +22,8 @@ abstract class MouseInputHandler(relatedEntity : Entity,
 
 
   def onDetach {}
+
+  def handleMessage(msg : Msg){}
 
 
   //Logic goes here

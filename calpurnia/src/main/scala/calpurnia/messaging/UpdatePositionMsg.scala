@@ -2,7 +2,7 @@ package calpurnia.messaging
 
 import calpurnia.{Component, Msg}
 
-class UpdatePositionMsg(val sender : Component,
+class UpdatePositionMsg(val sender : Object,
                         val argList : List[Float]) extends Msg{
 }
 
@@ -10,7 +10,7 @@ class UpdatePositionMsg(val sender : Component,
 object UpdatePositionMsg
 {
 
-  def apply(sender : Component, argList : List[Float]) =
+  def apply(sender : Object, argList : List[Float]) =
   {
     new UpdatePositionMsg(sender, argList)
   }
